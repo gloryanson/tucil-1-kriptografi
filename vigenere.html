@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vigenere Cipher</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="./script/vigenere.js"></script>
+	<script type="text/javascript" src="./script/file_reader.js"></script>
+	<script type="text/javascript" src="./script/save_file.js"></script>
+</head>
+<body>
+	<h1>Aplication for Encryption And Decryption</h1>
+	<div><button><a href="index.html">Go to Menu</a></button></div><br>
+	<div>
+		<input type='file' accept="text/plain" onchange='onChooseFile(event, onFileLoad.bind(this, "text"))' />
+	</div>
+	<h2>Standard Vigenere Cipher</h2>
+	<noscript>
+		<p>This requires JavaScript, which is not supported by your browser or is disabled.</p>
+	</noscript>
+	<form action="#" method="get" onsubmit="return false">
+		<table class="noborder">
+			<tbody>
+				<tr>
+					<td><label for="text">Text :</label></td>
+					<td><textarea id="text" cols="50" rows="10" placeholder="Please type input text"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="key">Key :</label></td>
+					<td><input type="text" value="" id="key"/></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="button" value="Encrypt" onclick="doCrypt(false)"/>
+						<input type="button" value="Decrypt" onclick="doCrypt(true)"/>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="result">Result :</label></td>
+					<td><textarea id="result" cols="50" rows="10" value=""></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="button" value="Save cipher text" onclick="saveToFile()"/></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+
+</body>
+</html>

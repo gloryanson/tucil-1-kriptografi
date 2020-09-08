@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'SansationLight';
+	src: url('../font/SansationLight.eot');
+	src: local('SansationLight'), url('../font/SansationLight.woff') format('woff'), url('../font/SansationLight.ttf') format('truetype');
+}
+
+html {
+	font-family: 'SansationLight', san-serif;
+}
+
+td{
+	vertical-align: top;
+	padding-right: 1em;
+}
+textarea{
+	width:40em; 
+	height:15em;
+}
+
+#key{
+	width:10em;
+}
+
+#matrix tr, #matrix td{
+	border: 1px #000;
+	border-style: solid;
+}
+
+#uploader{
+	display: none;
+}
+
+a{
+	text-decoration: none;
+}
